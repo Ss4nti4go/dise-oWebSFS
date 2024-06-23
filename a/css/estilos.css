@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 82px;
+}
+
+body {
+    background-color: rgb(67, 2, 151);
+
+}
+
+#hero {
+    position: relative;
+}
+
+#hero img {
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+
+#hero .hero-contenedor {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    background: rgba(113, 55, 146, 0.668) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAABxJREFUGFdjZGBgMGZgYDjLAAWMMAY2AbBKDBUAUIYCBfSSH+MAAAAASUVORK5CYII=) repeat;
+    display: grid;
+    place-items: center;
+}
+
+#hero .hero-texto h1 {
+    font-size: 128px;
+    color: white;
+    text-align: center;
+}
+
+#hero .hero-texto p {
+    font-size: 64px;
+    color: rgb(143, 143, 143);
+    text-align: center;
+}
+
+.genero {
+    text-align: center;
+    color: white;
+    padding-top: 16px;
+}
+
+.genero article {
+    background-color: rgb(126, 48, 228);
+}
+
+.bloque-accion .col3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.col3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding-bottom: 16px;
+    width: 50%;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.col3 article {
+    background-color: rgb(61, 29, 112);
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    height: 518px;
+    width: 314px;
+}
+
+.col3 article .descuento {
+    color: red;
+}
+
+.img-juegos {
+    height: 433px;
+    width: 314px;
+}
