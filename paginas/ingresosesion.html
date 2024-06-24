@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../img/robot.svg" alt="">
+        </div>
+        <nav class="nav">
+            <ul class="nav-ul">
+                <li class="nav-ul-li"><a href="../index.html">Incio</a></li>
+                <li class="nav-ul-li"><a href="acerca.html">Acerca</a></li>
+                <li class="nav-ul-li"><a href="descuentos.html">Descuentos</a></li>
+                <li class="nav-ul-li"><a href="ingresosesion.html">ingresar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <section class="form-container" id="form-container">
+                <div class="form-toggle">
+                    <button id="login-btn" onclick="toggleForm('login')">Iniciar Sesión</button>
+                    <button id="register-btn" onclick="toggleForm('register')">Registrarse</button>
+                </div>
+                <form id="login-form" class="form active moverse-dentro-izquierda ">
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" placeholder="Correo Electrónico" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <button type="submit">Ingresar</button>
+                </form>
+                <form id="register-form" class="form ">
+                    <h2>Registrarse</h2>
+                    <input type="text" placeholder="Nombre Completo" required>
+                    <input type="text" placeholder="Correo Electrónico" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <input type="password" placeholder="Confirmar Contraseña" required>
+                    <input type="text" placeholder="Número de Teléfono" required>
+                    <input type="date" placeholder="Fecha de Nacimiento" required>
+                    <button type="submit">Registrar</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="icons">
+        <h3>
+            Siguenos en nuestras redes:
+
+        </h3>
+        <a href=""><img src="../img/logoig.svg" alt="foto-ig"></a>
+        <a href=""><img src="../img/logordt.svg" alt="foto-rdt"></a>
+        <a href=""><img src="../img/logofb.svg" alt="foto-fb"></a>
+        <a href=""><img src="../img/logotwt.svg" alt="foto-twt"></a>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
