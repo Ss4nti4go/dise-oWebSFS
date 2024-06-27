@@ -14,58 +14,95 @@
     <title>Document</title>
 </head>
 
-<body class="acerca-body">
+<body>
     <header>
         <div>
-            <img src="/img/robot.svg" alt="">
+            <img src="../img/logoPag.png" alt="Zombie Gamer Hand">
         </div>
+        <p class="texto-header">Not Dead Yet</p>
         <nav class="nav">
             <ul class="nav-ul">
-                <li class="nav-ul-li"><a href="/index.html">Incio</a></li>
-                <li class="nav-ul-li"><a href="acerca.html">Acerca</a></li>
-                <li class="nav-ul-li"><a href="descuentos.html">Descuentos</a></li>
-                <li class="nav-ul-li"><a href="ingresosesion.html">Ingresar Sesión</a></li>
+                <li class="nav-ul-li"><a href="../index.html">Incio</a></li>
+                <li class="nav-ul-li"><a href="./acerca.html">Acerca</a></li>
+                <li class="nav-ul-li"><a href="./descuentos.html">Descuentos</a></li>
+                <li class="nav-ul-li"><a href="./ingresosesion.html">Ingresar Sesión</a></li>
             </ul>
         </nav>
     </header>
-    <main class="acerca-main">
-        <section id="hero-acerca">
-
-
-
-
-            <section class="acerca-texto">
-                <h1><strong>Porque elegir seguirnos?</strong></h1>
-            </section>
-
-
+    <section class="hero-acerca">
+    
+        <section class="hero-texto">
+            <h1><strong>¡Conocenos!</strong></h1>
+            <h2><strong>¿Por que elegir seguirnos?</strong></h2>
 
         </section>
 
-        <aside id="aside">
+    </section>
+    <main class="acerca-main">
+        <section class="section-acerca">
+            <article>
+                <img id="imagen-icono"
+                    src="/img/antivirus_internet_protect_safe_security_shape_shield_icon_127103 (1).png" alt="">
+                <h4>Seguridad</h4>
+                <p>Nuestra empresa cuenta con un sistema de rembolsos en caso de insatisfaccion del cliente, y no solo
+                    eso, sino que tambien contamos con el servicio de mercado para las transacciones, es decir que
+                    nosotros recibiremos el pago una vez usted haya confirmado su producto como bueno.</p>
+            </article>
+            <article>
+                <img id="imagen-icono" src="/img/people_community_filled_icon_200428.png" alt="confiabilidad">
+                <h4>Confiabilidad</h4>
+                <p>Contamos con una confiabilidad por parte de nuestros clientes bastante alta, estos en su mayoria son
+                    usuarios desde hace mucho tiempo tanto por las noticias como por las compras de videojuegos.</p>
+            </article>
+            <article>
+                <img id="imagen-icono" src="/img/uruguay_flags_flag_17081.png" alt="uruguay">
+                <h4>Emprendimiento Nacional</h4>
+                <p>Somos uno de los pocos emprendimientos nacionales dedicados a este apartado, y creemos ser los
+                    mejores en ello en nuetro pais, intentando ofrecer una experiencia ideal para nuestros clientes
+                    actualizandolos y manteniendo descuentos con precios accesibles para ellos.</p>
+            </article>
+            <article>
+                <img id="imagen-icono" src="/img/inputgaming_103583.png" alt="variedad">
+                <h4>Variedad de productos</h4>
+                <p>Contamos con una variedad de videojuegos muy alta para tener en cuenta la trayectoria de nuestra
+                    pagina, la idea de dar variedad es atraer a la mayoria de publico posible interesado en cualquier
+                    tipo de videojuego.</p>
+            </article>
 
+            <article>
+                <img id="imagen-icono" src="/img/mountain_flag_icon-icons.com_51089.png" alt="iconomontania">
+                <h4>Nuestra mision</h4>
+                <p>Lo que buscamos con nuestro sitio es crear un ambiente seguro para comprar videojuegos a precios
+                    ideales para nuestros clientes, lo otro que buscamos es estar lo menos alienados posible en cuanto a
+                    noticias de juegos se trata, ofreciendo informacion reciente en nuestra pagina de inicio y
+                    recomendaciones personales de videojuegos que consideramos clasicos.</p>
+            </article>
+            <article>
+                <img id="imagen-icono" src="/img/4472995_eye_eyes_password_security_show password_icon.png"
+                    alt="ojitos">
+                <h4>Lo que opinas de nosotros:</h4>
+                <label for="opinion"></label>
+                <textarea id="txtArea" rows="10" cols="70" placeholder="Yo opino..." ></textarea>
+            </article>
+        </section>
+        <aside id="aside">
             <section class="section-aside">
                 <h3>
                     Nuestros Fundadores
                 </h3>
-                <article class="acerca-article">
-                    <img src="/img/8baa705df0a4b7fc506edd230f00b9fe.jpg" alt="alonso">
-                    <p>Facundo Pena:</p>
+                <article class="section-aside-article">
+                    <img class="" src="/img/empresario.jpg" alt="alonso">
+                    <p><strong>Facundo Pena :</strong></p>
                     <p>Soy un programador novato con una fuerte pasión por aprender y crecer en el campo de la
                         programación. Aunque aún estoy en las primeras etapas de mi carrera, estoy comprometido a
                         dominar diferentes lenguajes y tecnologías. Estoy emocionado por enfrentar desafíos y colaborar
                         en proyectos que me permitan desarrollar mis habilidades y contribuir de manera significativa.
                     </p>
-
-
-
                 </article>
-
-
-                <article class="acerca-article">
+                <article class="section-aside-article">
                     <img src="/img/empresario2.jpg" alt="foto2">
 
-                    <p>Santiago Miraglia:</p>
+                    <p><strong>Santiago Miraglia</strong></p>
                     <p>Como programador experimentado, tengo amplia experiencia en múltiples lenguajes y tecnologías. He
                         liderado proyectos innovadores, optimizando rendimiento y eficiencia. Mi compromiso con la
                         excelencia técnica impulsa mi crecimiento continuo y contribuciones significativas al desarrollo
@@ -73,9 +110,9 @@
 
                 </article>
 
-                <article class="acerca-article">
+                <article class="section-aside-article">
                     <img src="/img/empresario4.webp" alt="empresario3">
-                    <p>Santiago Lopez:</p>
+                    <p> <strong>Santiago Lopez</strong></p>
                     <p>Como programador semiexperimentado, tengo habilidades sólidas en diversos lenguajes y
                         tecnologías. He trabajado en proyectos resolviendo problemas y aplicando soluciones efectivas,
                         con el objetivo de seguir creciendo y contribuir positivamente en nuevos desafíos y proyectos.
@@ -88,39 +125,6 @@
 
         </aside>
 
-        <section class="section-acerca">
-            <article>
-                <img id="imagen-icono" src="/img/antivirus_internet_protect_safe_security_shape_shield_icon_127103 (1).png" alt="">
-                <h4>Seguridad</h4>
-                <p>Nuestra empresa cuenta con un sistema de rembolsos en caso de insatisfaccion del cliente, y no solo eso, sino que tambien contamos con el servicio de mercado para las transacciones, es decir que nosotros recibiremos el pago una vez usted haya confirmado su producto como bueno.</p>
-            </article>
-            <article>
-                <img id="imagen-icono" src="/img/people_community_filled_icon_200428.png" alt="confiabilidad">
-                <h4>Confiabilidad</h4>
-                <p>Contamos con una confiabilidad por parte de nuestros clientes bastante alta, estos en su mayoria son usuarios desde hace mucho tiempo tanto por las noticias como por las compras de videojuegos.</p>
-            </article>
-            <article>
-                <img id="imagen-icono" src="/img/uruguay_flags_flag_17081.png" alt="uruguay">
-                <h4>Emprendimiento Nacional</h4>
-                <p>Somos uno de los pocos emprendimientos nacionales dedicados a este apartado, y creemos ser los mejores en ello en nuetro pais, intentando ofrecer una experiencia ideal para nuestros clientes actualizandolos y manteniendo descuentos con precios accesibles para ellos.</p>
-            </article>
-            <article >
-                <img id="imagen-icono" src="/img/inputgaming_103583.png" alt="variedad">
-                <h4>Variedad de productos</h4>
-                <p>Contamos con una variedad de videojuegos muy alta para tener en cuenta la trayectoria de nuestra pagina, la idea de dar variedad es atraer a la mayoria de publico posible interesado en cualquier tipo de videojuego.</p>
-            </article>
-
-            <article>
-                <img id="imagen-icono" src="/img/mountain_flag_icon-icons.com_51089.png" alt="iconomontania">
-                <h4>Nuestra mision</h4>
-                <p>Lo que buscamos con nuestro sitio es crear un ambiente seguro para comprar videojuegos a precios ideales para nuestros clientes, lo otro que buscamos es estar lo menos alienados posible en cuanto a noticias de juegos se trata, ofreciendo informacion reciente en nuestra pagina de inicio y recomendaciones personales de videojuegos que consideramos clasicos.</p>
-            </article>
-            <article>
-                <img id="imagen-icono" src="/img/4472995_eye_eyes_password_security_show password_icon.png" alt="ojitos">
-                <h4>Lo que opinan de nosotros:</h4>
-                <p></p>
-            </article>
-        </section>
     </main>
     <footer class="icons">
         <h3>
@@ -130,7 +134,7 @@
         <a href=""><img src="/img/logoig.svg" alt="foto-ig"></a>
         <a href=""><img src="/img/logordt.svg" alt="foto-rdt"></a>
         <a href=""><img src="/img/logofb.svg" alt="foto-fb"></a>
-        <a href=""><img src="/img/logotwt.svg" alt="foto-twt"></a>
+        <a href="" ><img src="/img/logotwt.svg" alt="foto-twt"></a>
     </footer>
 </body>
 

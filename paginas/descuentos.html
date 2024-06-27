@@ -15,16 +15,21 @@
 <body>
     <header>
         <div>
-            <img src="../img/robot.svg" alt="">
+            <img src="../img/logoPag.png" alt="Zombie Gamer Hand">
         </div>
+        <p class="texto-header">Not Dead Yet</p>
         <nav class="nav">
             <ul class="nav-ul">
-                <li class="nav-ul-li"><a href="index.html">Incio</a></li>
-                <li class="nav-ul-li"><a href="acerca.html">Acerca</a></li>
-                <li class="nav-ul-li"><a href="descuentos.html">Descuentos</a></li>
-                <li class="nav-ul-li"><a href="ingresosesion.html">Ingresar Sesión</a></li>
+                <li class="nav-ul-li"><a href="../index.html">Incio</a></li>
+                <li class="nav-ul-li"><a href="./acerca.html">Acerca</a></li>
+                <li class="nav-ul-li"><a href="./descuentos.html">Descuentos</a></li>
+                <li class="nav-ul-li"><a href="./ingresosesion.html">Ingresar Sesión</a></li>
             </ul>
         </nav>
+
+        <span class="burger-ico">&#9776;</span>
+        </div>
+
     </header>
 
     <main class="main-descuentos main-fondo">
@@ -32,8 +37,8 @@
             <img src="../img/b2.jpg" alt="videojuegos">
             <div class="hero-contenedor">
                 <div class="hero-texto">
-                    <h1><strong>OFERTAS IMPERDIBLES</strong></h1>
-                    <p>En [...] encontraras descuentos increibles en tus titulos favoritos</p>
+                    <h1><strong class="texto-hero">OFERTAS IMPERDIBLES</strong></h1>
+                    <p>En <strong>Not Dead Yet</strong> encontraras descuentos increibles en tus titulos favoritos</p>
                 </div>
             </div>
         </section>
@@ -43,16 +48,25 @@
                 <h2>Accion</h2>
             </article>
         </section>
-
-        <section class="bloque-accion">
-            <article class="tarjeta">
+        <!-- 
+        <div class="calificacion">
+        <label for="star5"></label>
+        <label for="star4"></label>
+        <label for="star3"></label>
+        <label for="star2"></label>
+        <label for="star1"></label>
+        </div>
+        -->
+        <section class="bloque">
+            <article class="tarjeta card" onclick="expandCard(this)">
                 <div class="descuento-circulo">40%</div>
                 <img class="img-juegos" src="../img/hades.webp" alt="hades">
                 <h2>Hades</h2>
                 <p>Precio Original: $740</p>
                 <p class="descuento"><strong>Precio Descuento: $444</strong></p>
+                <section class="card-contenido"></section>
             </article>
-            
+            <div class="overlay"></div>
             <article class="tarjeta">
                 <div class="descuento-circulo">60%</div>
                 <img class="img-juegos" src="../img/sifu.png" alt="sifu">
@@ -111,7 +125,7 @@
             </article>
         </section>
 
-        <section class="bloque-accion">
+        <section class="bloque">
             <article class="tarjeta">
                 <div class="descuento-circulo">25%</div>
                 <img class="img-juegos" src="../img/outlast.jpg" alt="Outlast">
@@ -177,7 +191,7 @@
             </article>
         </section>
 
-        <section class="bloque-accion">
+        <section class="bloque">
             <article class="tarjeta">
                 <div class="descuento-circulo">85%</div>
                 <img class="img-juegos" src="../img/doome.jpg" alt="Doom Eternal">
@@ -249,6 +263,7 @@
         <a href=""><img src="../img/logofb.svg" alt="foto-fb"></a>
         <a href=""><img src="../img/logotwt.svg" alt="foto-twt"></a>
     </footer>
+
 
 </body>
 
