@@ -8,6 +8,10 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
             rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./css/style.css">
@@ -17,20 +21,21 @@
 <body>
     <header>
         <div>
-            <img src="img/robot.svg" alt="">
+            <img src="../img/logoPag.png" alt="Zombie Gamer Hand">
         </div>
+        <p class="texto-header">Not Dead Yet</p>
         <nav class="nav">
             <ul class="nav-ul">
-                <li class="nav-ul-li"><a href="index.html">Incio</a></li>
-                <li class="nav-ul-li"><a href="acerca.html">Acerca</a></li>
-                <li class="nav-ul-li"><a href="descuentos.html">Descuentos</a></li>
-                <li class="nav-ul-li"><a href="ingresosesion.html">Ingresar Sesión</a></li>
+                <li class="nav-ul-li"><a href="./index.html">Incio</a></li>
+                <li class="nav-ul-li"><a href="./paginas/acerca.html">Acerca</a></li>
+                <li class="nav-ul-li"><a href="./paginas/descuentos.html">Descuentos</a></li>
+                <li class="nav-ul-li"><a href="./paginas/ingresosesion.html">Ingresar Sesión</a></li>
             </ul>
         </nav>
     </header>
     <section id="hero">
         <video autoplay loop class="hero-video">
-            <source src="./img/videoplayback.mp4" type="video/mp4">
+            <source src="img/Videosistemas2.mp4" type="video/mp4">
         </video>
         <div class="hero-contenedor">
             <div class="hero-texto">
@@ -42,25 +47,62 @@
 
     <main class="main-index main-fondo">
         <section class="section-categorias" onclick="expandCard(this)">
-               
-                <div class="section-categorias-presentacion">
+            
+            <div class="section-categorias-presentacion">
+                
                     <img src="/img/singleplayerimg.webp" alt="imagen fondo carta de juegos single player">
-                    <div>
-                        <h2>Single Player</h2>
-                    <p>
-                        Expreiencia ideal para aquellos jugadores que disfrutan de una gran narrativa junto a muchas horas
-                        de diversion, algunas elecciones populares:
-                    </p>
-                    </div>
-                    
-                </div>
+                
               
-                <div class="section-categrias-contenido">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis eveniet commodi suscipit eum reprehenderit ullam nesciunt iste fuga dolore architecto ipsa praesentium veritatis tempore consequuntur optio ad iusto, id incidunt necessitatibus reiciendis error officia perspiciatis alias! Nam sit esse doloremque. Accusantium, iure neque facere omnis ab molestias alias voluptatem laborum, ipsum cupiditate consequatur dolore dicta consectetur aperiam vel aliquam eveniet unde quis natus assumenda error. Aperiam dolore perspiciatis cumque est similique fuga, eum excepturi hic sit voluptatem culpa minima, assumenda ad illo nisi ab totam. Explicabo facilis nulla aspernatur consectetur distinctio quis quae autem itaque atque quibusdam amet molestiae ducimus nobis sunt repellendus magnam laboriosam consequatur id quos laudantium, eveniet velit dolorum cum cumque. Ullam illo ipsam fugit culpa voluptatum sit itaque, molestias corrupti consequuntur esse! Debitis sunt magni quo quos recusandae impedit repudiandae, perspiciatis ad quibusdam adipisci nostrum. Molestiae ipsa sunt id aut. Facere vero repellat quos temporibus amet ipsa perferendis placeat, dolorum rerum deleniti expedita alias explicabo molestias atque illo? Ipsum inventore eveniet minus consequuntur, animi eligendi sequi sapiente similique nihil nostrum dolore accusantium dolorem tempora et aliquam, aut aperiam possimus molestias quasi? Commodi, ullam! Id officiis labore tempora architecto eos deleniti nemo optio nulla placeat nesciunt.</p>
+                <div>
+                    <h2>Single Player</h2>
+                    <p>
+                        Experiencia ideal para aquellos jugadores que disfrutan de una gran narrativa junto a muchas horas
+                        de diversión, algunas elecciones populares:
+                    </p>
                 </div>
-           
+            </div>
+            <div class="section-categrias-contenido">
+                <section class="container-reviews">
+                    <div class="review">
+                        <div class="perfil">
+                            <h3>Juan</h3>
+                            <img src="./img/fotoperfil.webp" alt="">
+                        </div>
+                        <div class="comentario">
+                            Hey, si te gustan los juegos donde la historia es el corazón de la experiencia, los singleplayer son para ti. Es como sumergirse en una película épica pero con el control total de la trama. Desde aventuras emocionantes hasta historias que te hacen reflexionar, estos juegos te llevan a mundos impresionantes y te hacen parte de la acción. ¡No te pierdas la oportunidad de vivir estas increíbles historias en tu propio ritmo y disfrutar de horas de diversión y emoción!
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="perfil">
+                            <h3>Claudia</h3>
+                            <img src="./img/fotoperfil.webp" alt="">
+                        </div>
+                        <div class="comentario">
+                            Los juegos singleplayer son como una aventura cinematográfica donde tú eres el protagonista. Me encanta perderme en mundos fascinantes llenos de historias profundas y decisiones que realmente importan. Desde explorar ruinas antiguas hasta luchar contra enemigos poderosos, cada momento es una experiencia única que me sumerge por completo.
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="perfil">
+                            <h3>Pedro</h3>
+                            <img src="./img/fotoperfil.webp" alt="">
+                        </div>
+                        <div class="comentario">
+                            Los juegos singleplayer ofrecen una experiencia incomparable de exploración y descubrimiento. Para mí, cada partida es un viaje personal hacia lo desconocido, donde la libertad de explorar paisajes vastos y detallados es tan impresionante como adictiva. Me fascina sumergirme en entornos meticulosamente diseñados, desde selvas exuberantes hasta ciudades en ruinas, cada rincón esconde secretos y desafíos que invitan a la reflexión y estrategia. La capacidad de tomar decisiones que afectan el curso de la historia añade capas de profundidad, haciendo que cada experiencia sea verdaderamente única. Para los amantes de la aventura y la narrativa, los juegos singleplayer son una oportunidad para vivir épicas personales que quedan grabadas en la memoria mucho después de apagar la consola o el PC. Son, sin duda, una forma de arte interactivo que despierta la curiosidad y el asombro, invitándote a explorar límites tanto dentro como fuera del juego.
+                        </div>
+                    </div>
+                    <div class="seccion-comentarios">
+                        <div class="perfil-usuario">
+                            <img src="tu-foto-de-perfil.jpg" alt="Foto de perfil">
+                        </div>
+                        <div class="entrada-comentario">
+                            <textarea id="comentario-usuario" rows="4" placeholder="Escribe tu comentario..."></textarea>
+                            <button onclick="enviarComentario()">Enviar</button>
+                        </div>
+                    </div>
+                </section>
+             
+            </div>
         </section>
-        <div class="overlay"></div>
         <section class="section-categorias" onclick="expandCard(this)">
                 <div class="section-categorias-presentacion">
                     <img src="./img/RPGhero.webp" alt="">
@@ -71,14 +113,12 @@
                             de diversion, algunas elecciones populares:
                         </p>
                     </div>
-                   
                 </div>
              
                 <div class="section-categrias-contenido">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis eveniet commodi suscipit eum reprehenderit ullam nesciunt iste fuga dolore architecto ipsa praesentium veritatis tempore consequuntur optio ad iusto, id incidunt necessitatibus reiciendis error officia perspiciatis alias! Nam sit esse doloremque. Accusantium, iure neque facere omnis ab molestias alias voluptatem laborum, ipsum cupiditate consequatur dolore dicta consectetur aperiam vel aliquam eveniet unde quis natus assumenda error. Aperiam dolore perspiciatis cumque est similique fuga, eum excepturi hic sit voluptatem culpa minima, assumenda ad illo nisi ab totam. Explicabo facilis nulla aspernatur consectetur distinctio quis quae autem itaque atque quibusdam amet molestiae ducimus nobis sunt repellendus magnam laboriosam consequatur id quos laudantium, eveniet velit dolorum cum cumque. Ullam illo ipsam fugit culpa voluptatum sit itaque, molestias corrupti consequuntur esse! Debitis sunt magni quo quos recusandae impedit repudiandae, perspiciatis ad quibusdam adipisci nostrum. Molestiae ipsa sunt id aut. Facere vero repellat quos temporibus amet ipsa perferendis placeat, dolorum rerum deleniti expedita alias explicabo molestias atque illo? Ipsum inventore eveniet minus consequuntur, animi eligendi sequi sapiente similique nihil nostrum dolore accusantium dolorem tempora et aliquam, aut aperiam possimus molestias quasi? Commodi, ullam! Id officiis labore tempora architecto eos deleniti nemo optio nulla placeat nesciunt.</p>
                 </div>
         </section>
-        <div class="overlay"></div>
         <section class="section-categorias" onclick="expandCard(this)">
           
                 <div class="section-categorias-presentacion">
@@ -97,9 +137,9 @@
                 </div>
     
         </section>
-        <div class="overlay"></div>
+
         <section class="section-categorias" onclick="expandCard(this)">
-        
+    
                 <div class="section-categorias-presentacion">
                     <img src="" alt="">
                     <div>
@@ -115,7 +155,9 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis eveniet commodi suscipit eum reprehenderit ullam nesciunt iste fuga dolore architecto ipsa praesentium veritatis tempore consequuntur optio ad iusto, id incidunt necessitatibus reiciendis error officia perspiciatis alias! Nam sit esse doloremque. Accusantium, iure neque facere omnis ab molestias alias voluptatem laborum, ipsum cupiditate consequatur dolore dicta consectetur aperiam vel aliquam eveniet unde quis natus assumenda error. Aperiam dolore perspiciatis cumque est similique fuga, eum excepturi hic sit voluptatem culpa minima, assumenda ad illo nisi ab totam. Explicabo facilis nulla aspernatur consectetur distinctio quis quae autem itaque atque quibusdam amet molestiae ducimus nobis sunt repellendus magnam laboriosam consequatur id quos laudantium, eveniet velit dolorum cum cumque. Ullam illo ipsam fugit culpa voluptatum sit itaque, molestias corrupti consequuntur esse! Debitis sunt magni quo quos recusandae impedit repudiandae, perspiciatis ad quibusdam adipisci nostrum. Molestiae ipsa sunt id aut. Facere vero repellat quos temporibus amet ipsa perferendis placeat, dolorum rerum deleniti expedita alias explicabo molestias atque illo? Ipsum inventore eveniet minus consequuntur, animi eligendi sequi sapiente similique nihil nostrum dolore accusantium dolorem tempora et aliquam, aut aperiam possimus molestias quasi? Commodi, ullam! Id officiis labore tempora architecto eos deleniti nemo optio nulla placeat nesciunt.</p>
                 </div>
         </section>
-        <div class="overlay"></div>
+        <div class="overlay" onclick="cerrarCardOverlay()"></div>
+        <div class="cerrar-card" onclick="cerrarCardOverlay()"><p>&#10005;</p></div>
+        
     </main>
     <footer class="icons">
         <h3>
@@ -127,7 +169,7 @@
         <a href=""><img src="../img/logofb.svg" alt="foto-fb"></a>
         <a href=""><img src="../img/logotwt.svg" alt="foto-twt"></a>
     </footer>
-    <script src="/js/scripts.js"></script>
+    <script src="./js/scripts.js"></script>
 
     
 
