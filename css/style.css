@@ -1,0 +1,1411 @@
+* {
+    font-family: "Titillium Web";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.chakra-petch-light {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: fit-content;
+    font-family: 'Arial', sans-serif;
+
+    height: fit-content;
+    margin: 0;
+    height: 100%;
+    margin-bottom: 180px;
+    overflow-x: hidden;
+}
+
+.titillium-web-extralight {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header {
+    box-shadow: 0 4px 6px rgba(14, 13, 13, 0.623);
+    max-height: 86px;
+    background-color: #242424;
+    animation: moverFondo 8s ease infinite;
+    text-align: center;
+    display: flex;
+    padding: 1rem 0;
+    z-index: 10;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+/*
+----------------------------------------------
+Edicion de la navbar y menu burger
+----------------------------------------------
+*/
+.nav-ul-li a {
+    color: #5d5e61;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    transition: background 0.5s ease-in;
+    background: #ffffff;
+    padding: 4px;
+    border-radius: 20px;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.nav-ul-li a:not(:hover, :active) {
+    color: #fff;
+    background: none;
+    text-decoration: none;
+}
+
+nav {
+    margin-top: auto;
+}
+
+.nav-ul-li {
+    list-style: none;
+    margin: 0rem 1rem 0rem 1rem;
+}
+
+.nav {
+    align-items: end;
+}
+
+.nav-ul {
+    justify-content: end;
+    display: flex;
+}
+
+.burger-ico {
+    display: none;
+}
+
+.texto-header {
+    color: white;
+    font-size: 2rem;
+
+}
+
+
+header img {
+    position: absolute;
+    top: 4px;
+    width: 100px;
+    animation: mov 4s ease infinite alternate;
+}
+
+/*
+----------------------------------------------
+Termina edicion de la navbar y menu burger
+----------------------------------------------
+*/
+/*
+----------------------------------------------
+Edicion de etiquetas MAIN
+----------------------------------------------
+*/
+main {
+    padding-bottom: 100px;
+}
+
+.acerca-main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-bottom: 10rem;
+    background: linear-gradient(120deg, #866e6eea, #805656ea, #925e5eea, #a36969ea, #886060ea, #795050ea);
+    background-size: 300%;
+    animation: moverFondo 8s ease infinite;
+   
+}
+
+.main-index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 5rem;
+    grid-template-rows: auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+
+}
+
+.main-iniciosesion {
+    height: 100%;
+}
+
+.main-fondo {
+    background: linear-gradient(120deg, #866e6eea, #805656ea, #925e5eea, #a36969ea, #886060ea, #795050ea);
+    background-size: 300%;
+    animation: moverFondo 8s ease infinite;
+}
+
+.main-fondo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+
+    animation: moverFondo 8s ease infinite;
+    z-index: -1;
+}
+
+/*
+----------------------------------------------
+Termina la edicion de etiquetas MAIN
+----------------------------------------------
+*/
+
+/*
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Le da formato a todas la seccion de comentarios, respuestas y pefiles que aparecen dentro de las paginas de juegos en la pagina Inicio (INDEX)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+*/
+.comentario {
+    position: relative;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    line-height: 1.6;
+    justify-content: center;
+}
+
+.comentario-responder {
+    width: 10%;
+    cursor: pointer;
+    color: #6d6969;
+    font-size: 16px;
+    transition: color 0.5s;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.comentario-responder:hover {
+    color: #73b1c0;
+}
+
+.perfil h3 {
+    font-family: Chakra Petch;
+    font-size: clamp(8px, 4vw, 32px);
+    color: #000;
+    background-color: #ffffff71;
+}
+
+.seccion-comentarios {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.entrada-comentario {
+    flex: 1;
+}
+
+.respuesta {
+    margin-left: 8%;
+    border-left: 3px solid #007bff;
+    padding-left: 20px;
+}
+
+.entrada-comentario textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.entrada-comentario button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.entrada-comentario button:hover {
+    background-color: #0056b3;
+}
+
+.review-usuario {
+    align-items: center;
+    display: flex;
+}
+
+.review {
+    margin-left: 1rem;
+    width: 80%;
+    background-color: #d3d3d3;
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+/*
+---------------------------------------------------
+Tarjetas de categorias de juegos en la página INDEX
+----------------------------------------------------
+*/
+.section-categorias {
+    width: auto;
+    margin: auto;
+    margin-top: 4vw;
+    overflow-y: hidden;
+    max-width: 45vw;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid rgb(173, 149, 149);
+    background: rgb(146, 94, 94);
+    box-shadow: 5px 10px 5px rgba(100, 76, 76, 0.8);
+    transition: transform 0.3s ease, max-height 0.3s ease;
+    max-height: 300px;
+    height: auto;
+    overflow: hidden;
+}
+
+.section-categorias-presentacion img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    min-width: 500px;
+}
+
+.section-categorias-presentacion div {
+    color: #ffffff;
+}
+
+/*
+-------------------------------------------------------------------------------------------------------------------------------------------
+Acciones que realizan las tarjetas cuando interactuamos con ellas 
+-------------------------------------------------------------------------------------------------------------------------------------------
+*/
+.section-categorias-presentacion.expanded div {
+    position: absolute;
+    background-color: #00000031;
+    top: 50%;
+    display: flex;
+    opacity: 0.2;
+    transition: opacity 0.3s;
+    color: white;
+}
+
+.section-categorias h2 {
+    margin: 0;
+    font-size: clamp(16px, 1vw 16px);
+}
+
+.section-categorias p {
+
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.cerrar-card {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 3%;
+    width: auto;
+    height: fit-content;
+    text-align: center;
+    align-items: center;
+    border-radius: 10%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 200;
+    transition: transform .6s ease;
+}
+
+.cerrar-card:hover {
+    transform: scale(1.05);
+}
+
+.cerrar-card p {
+    font-size: clamp(32px, 3vw, 54px);
+}
+
+.section-categorias:hover {
+    border: #0056b3 3px solid;
+}
+
+.section-categorias.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 15;
+    width: 100%;
+    max-width: 98%;
+    border: none;
+    padding-bottom: 5rem;
+    max-height: 1000px;
+    overflow-y: scroll;
+    cursor: auto;
+}
+
+.section-categorias h2 {
+    position: absolute;
+    font-family: Chakra Petch;
+    font-size: clamp(16px, 6vw, 7vw);
+    opacity: 0;
+    width: 100%;
+    transition: opacity 0.1s;
+    background-color: #292c3080;
+    font-weight: 200;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+}
+
+.section-categorias.expanded h2 {
+    position: fixed;
+    font-family: Chakra Petch;
+    font-size: clamp(16px, 6vw, 7vw);
+    color: #ffffff;
+    opacity: 0.3;
+    transition: opacity 0.5s;
+    display: block;
+    background-color: #292c3080;
+    font-weight: 400;
+    width: 50%;
+    top: 10%;
+    left: 10%;
+}
+
+.section-categorias-presentacion img {
+    height: 150%;
+    opacity: 0.9;
+    display: block;
+
+}
+
+.section-categorias-presentacion div {
+
+    max-height: 600px;
+    transition: opacity 0.5s;
+}
+
+.section-categorias-presentacion:hover h2 {
+    opacity: 1;
+}
+
+.section-categorias.expanded .section-categorias-presentacion img {
+    box-shadow: 0px 0px 30px #242424;
+    margin-bottom: 2rem;
+}
+
+.section-categorias.expanded p {
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0.3;
+    font-family: Chakra Petch;
+    font-size: clamp(10px, 2vw, 3vw);
+    background-color: #292c3080;
+    max-width: 400px;
+    font-weight: 300;
+    transition: opacity 0.5s;
+    top: 30%;
+    right: 10%;
+}
+
+.section-categorias-presentacion:hover div {
+    display: block;
+    opacity: 1;
+}
+
+.section-categorias-presentacion:hover div p {
+    opacity: 1;
+}
+
+.overlay {
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.377);
+    display: none;
+    z-index: 5;
+}
+
+.section-categrias-contenido {
+    display: none;
+}
+
+.section-categorias.expanded .section-categrias-contenido {
+    display: block;
+}
+
+/*
+----------------------------------------------------------------------
+Termina cSS de las Tarjetas de categorias de juegos en la página INDEX
+---------------------------------------------------------------------
+*/
+/*
+--------------------------------------------------------------------------
+Estilo de los comentarios, fotos de perfil y nombres de distintos usuarios
+-------------------------------------------------------------------------
+*/
+.perfil {
+    margin-top: 0rem;
+    width: fit-content;
+    padding: 20px;
+    text-align: center;
+}
+
+.perfil img {
+    width: 90px;
+    height: 90px;
+    margin: 0;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    margin-right: 10px;
+    box-shadow: none;
+    margin-top: 16px;
+}
+
+.card.expanded+.overlay {
+    display: block;
+}
+
+.section-categorias.expanded+.overlay {
+    display: block;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    margin-top: 10rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+}
+
+.form-container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: fit-content;
+    transition: height 0.4s ease;
+    overflow: hidden;
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.form-toggle button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 48%;
+    border-radius: 5px;
+    transition: background-color 1s;
+}
+
+.form-toggle button:hover {
+    background-color: #555;
+}
+
+.form {
+    display: none;
+    flex-direction: column;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.form.active {
+    display: flex;
+    opacity: 1;
+}
+
+.form.inactive {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.form input {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+/*
+------------------------------------------------------------------------
+Clases para la página de incio de sesion y registro(usadas en javascript)
+-------------------------------------------------------------------------
+*/
+.moverse-dentro-izquierda {
+    animation: moverseDentroIzquierda 0.4s forwards;
+}
+
+.moverse-dentro-derecha {
+    animation: moverseDentroDerecha 0.4s forwards;
+}
+
+.moverse-fuera-izquierda {
+    animation: moverseFueraIzquierda 0.4s forwards;
+}
+
+.moverse-fuera-derecha {
+    animation: moverseFueraDerecha 0.4s forwards;
+}
+
+/*
+------------------------------------------------------------------------
+Hasta ACA Clases para la página de incio de sesion y registro(usadas en javascript)
+-------------------------------------------------------------------------
+*/
+
+/*
+-------------------------------------------------------------------------------------------------------------------------------------------
+Hero Section utilizadas y sus propiedades
+-------------------------------------------------------------------------------------------------------------------------------------------
+*/
+#hero {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 800px;
+    width: 100%;
+    z-index: 1;
+    animation: sombraAnimacion 2s ease-in-out infinite alternate;
+}
+
+.hero-video {
+    height: 100%;
+    width: 100%;
+    display: block;
+    min-height: 500px;
+    min-width: max-content;
+}
+.hero-img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    min-height: 500px;
+    min-width: max-content;
+}
+#hero .hero-contenedor {
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    position: absolute;
+    background: rgba(113, 55, 146, 0.668) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAABxJREFUGFdjZGBgMGZgYDjLAAWMMAY2AbBKDBUAUIYCBfSSH+MAAAAASUVORK5CYII=) repeat;
+    display: grid;
+    place-items: center;
+}
+
+#hero .hero-texto h1 {
+    font-size: clamp(10px, 9vw, 128px);
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    left: 0%;
+}
+
+.hero-texto h2 {
+    position: absolute;
+    background: rgba(39, 35, 35, 0.475);
+    padding: 0rem 2rem 0rem 2rem;
+    top: 62%;
+    right: 28%;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+#hero .hero-texto p {
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    left: 0%;
+    font-size: clamp(10px, 6vw, 64px);
+    color: rgb(143, 143, 143);
+    text-align: center;
+}
+/*
+-------------------------------------------------------------------------------------------------------------------------------------------
+Clases utilizadas en la pagina de descuentos, .genero es seccion que indica el genero de los videojuegos mostrados,
+".bloque" pertenece a los videojuegos que se muestran en pantalla en conjunto (todo el bloque de juegos), ".tarjetas" se refiere a cada tarjeta
+de los juegos mostrados en pantalla la cual contiene la informacion de los juegos y ".descuento-circulo" es el circulo que indica cual es
+el descuento en un juego
+-------------------------------------------------------------------------------------------------------------------------------------------
+*/
+.genero {
+    background-color: rgba(218, 177, 144, 0.596);
+    text-align: center;
+    color: rgb(240, 216, 216);
+    font-size: clamp(16px, 8vw, 32px);
+    height: auto;
+    margin: 2rem 0rem 2rem 0rem;
+    padding-top: 16px;
+}
+
+
+.bloque {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 16px;
+    padding: 25px;
+
+}
+
+.tarjeta {
+    max-width: 314px;
+    max-height: 500px;
+    min-height: 350px;
+    min-width: 110px;
+    position: relative;
+    background-color: #3c2069;
+    color: white;
+    text-align: center;
+    padding: 0.1rem;
+    margin-top: 6px;
+    margin: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 5px 10px 10px #000;
+    transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.img-juegos {
+    height: 353px;
+    width: 320px;
+    max-height: 353px;
+    max-width: 320px;
+    object-fit: cover;
+}
+
+.descuento-circulo {
+    position: absolute;
+    display: block;
+    z-index: 8;
+    top: 85%;
+    right: 1%;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: 2px solid #fff;
+
+}
+
+.descuento strong {
+    font-size: larger;
+    font-weight: 600;
+    margin-right: 2rem;
+    color: #ffc107;
+}
+
+/*
+---------------------------------------
+Propiedades de la barra de navegacion
+---------------------------------------
+*/
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #693996;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8a2be2;
+    border-radius: 10px;
+    border: 2px solid #dda0dd;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #aa63c9;
+    border-radius: 10px;
+    border: 2px solid #616161;
+}
+
+/*
+---------------------------------------------------------------------
+Formato de la pagina "Acerca" y de todos sus elementos relacionados
+---------------------------------------------------------------------
+*/
+.section-acerca {
+    grid-column: span 3;
+    grid-row: span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+    padding-top: 32px;
+}
+.section-acerca article {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(165, 146, 146);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.623);
+    max-height: 900px;
+    
+}
+
+#aside {
+    border-radius: 10px;
+    margin: 16px;
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.623);
+    grid-column: span 2;
+    grid-row: span 2;
+    display: grid;
+    grid-template-rows: .5fr 2fr 2fr 2fr;
+
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #816363;
+    border-radius: 10px;
+}
+
+.aside-h3 {
+    text-align: center;
+    font-size: clamp(16px, 8vw, 64px);
+    margin-bottom: 20px;
+    box-shadow: 0px 10px 10px #000;
+    background-color:#af8f8f;
+    color: #ffffff;
+}
+
+#imagen-icono {
+    margin: auto;
+    border-radius: 250px;
+    display: flex;
+    max-height: 60px;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.persona {
+    text-align: center;
+    background-color: #af8f8f;
+    padding: 0.3rem;
+    box-shadow: 8px 8px 8px #000;
+    border-radius: 8px;
+    margin: 0.4rem;
+}
+
+.persona img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.descripcion h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.descripcion p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0rem;
+    text-align: left;
+}
+
+.section-acerca h4 {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 16px;
+    position: flex;
+}
+
+.section-acerca p {
+    position: flex;
+
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: fit-content;
+}
+
+#txtArea {
+    width: 100%;
+    height: 55%;
+    max-height: 180px;
+}
+/*
+------------------------------------
+Footer, sus elementos y propiedades
+------------------------------------
+*/
+footer {
+    position: fixed;
+    z-index: 10;
+    bottom: 0px;
+    width: 100%;
+    background-color: #242424;
+    min-height: 86px;
+    margin-top: 1rem;
+    padding-top: 8px;
+    padding-right: 2rem;
+    color: #fff;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-left: 4px;
+}
+
+footer .redes-sociales {
+    border-left: 4px solid #ffff;
+    gap: 16px;
+}
+
+footer img {
+    width: 30px;
+    transition: transform .5s ease;
+}
+
+footer img:hover {
+    transform: scale(1.05);
+}
+
+.twt img {
+    width: 33px;
+}
+
+/*
+---------------------------------------
+Media Queries
+---------------------------------------
+*/
+@media (max-width:1000px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .main-index {
+        grid-template-columns: 1fr;
+    }
+
+    #hero {
+        border-bottom: 10px;
+        height: 100%;
+        width: 100%;
+        max-height: 700px;
+        z-index: 3;
+        animation: sombraAnimacion 2s ease-in-out infinite alternate;
+
+    }
+
+    .acerca-main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        max-height: 3500px;
+    }
+
+    .hero-texto h1 {
+        position: absolute;
+        padding: auto;
+        top: 10%;
+        right: 30%;
+        color: azure;
+        font-size: 4rem;
+    }
+
+    .hero-texto h2 {
+        position: absolute;
+        background: rgba(39, 35, 35, 0.475);
+        padding: auto;
+        top: 32%;
+        right: 18%;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+    }
+
+    #aside {
+        grid-column: span 1;
+        grid-row: 2;
+        max-height: 1150px;
+    }
+    .persona {
+        text-align: center;
+        background-color: #af8f8f;
+        padding: 0.2rem;
+        box-shadow: 8px 8px 8px #000;
+        border-radius: 8px;
+        margin: 10px;
+    }
+
+    .section-aside img {
+        margin: 10px;
+        padding-top: 10px;
+        max-height: 250px;
+        max-width: 200px;
+        border-radius: 250px;
+        padding-bottom: 32px;
+    }
+
+    .section-acerca {
+        grid-column: span 1;
+        grid-row: span 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        max-height: 2000px;
+    }
+
+
+
+    .section-acerca article {
+        max-height: 300px;
+        margin-bottom: 16px;
+    }
+
+
+    .section-acerca h4 {
+        font-size: 16px;
+    }
+
+    .section-acerca p {
+        font-size: 15px;
+    }
+
+    #txtArea {
+
+        height: fit-content;
+
+    }
+
+    header {
+        min-height: 54px;
+    }
+
+    nav {
+        display: block;
+        position: fixed;
+        right: -300px;
+        width: 300px;
+        background: #2b273e;
+        height: 100%;
+        top: 0;
+        transition: all .4s;
+        z-index: 8;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 82px 22px;
+    }
+
+    nav ul li {
+        padding: 12px 0;
+        font-size: 22px;
+        color: #fff;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    .burger-ico {
+        color: #fff;
+        display: block;
+        cursor: pointer;
+        font-weight: 800;
+        font-size: 20px;
+        background: #2a292c;
+        z-index: 9;
+        transition: all .4s;
+        height: 40px;
+        width: 40px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        padding: 0 1.5px 3px 1.5px;
+    }
+
+    .burger-active {
+        transform: rotate(-90deg);
+    }
+
+    .show-menu {
+        transform: translateX(-300px);
+    }
+
+}
+
+@media (max-width: 768px) {
+    footer{
+        font-size: 10px; /*hola bebeta*/
+    }
+    header img{
+        min-width: 50px;
+        width: 6vw;
+        max-width: 68px;
+        left: 5px;
+    }
+    #aside {
+        grid-column: span 1;
+        grid-row: 2;
+        max-height: 1450px;
+    
+    }
+  
+    .section-acerca article p{
+        font-size: clamp(2px, 3vw, 20px);
+    }
+    #hero .hero-texto h1 {
+        top: 10%;
+        position: absolute;
+        max-height: 10px;
+        font-size: clamp(40px, 10vw, 80px);
+        text-align: center;
+        color: white;
+    }
+
+    #hero .hero-texto p {
+        font-size: 16px;
+        color: rgb(143, 143, 143);
+        text-align: center;
+    }
+
+    .hero-texto p strong .texto-hero {
+        font-size: clamp(24px, 1.5vw, 1.5vw);
+        text-align: center;
+        color: white;
+    }
+
+    .img-juegos {
+        max-width: 110px;
+        max-height: 250px;
+        width: 100%;
+        height: 60vw;
+        max-width: 350px;
+        max-height: 320px;
+
+    }
+
+    .bloque {
+        padding: 0px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bloque h2 {
+        font-size: 14px;
+    }
+
+    .bloque .descuento-circulo {
+        display: none;
+    }
+
+    .bloque p {
+        font-size: 10px;
+    }
+
+    .bloque .descuento {
+        font-size: 10px;
+    }
+
+    .tarjeta {
+        padding: 0;
+        width: 40vw;
+        min-width: 130px;
+        min-height: 370px;
+        margin: auto;
+        transform: none;
+        padding: 8px;
+        justify-content: center;
+    }
+
+    .tarjeta h2 {
+        margin: 2px;
+    }
+
+    .section-categorias {
+        max-width: 600px;
+    }
+
+    .section-categorias-presentacion div h2 {
+
+        top: -300px;
+        opacity: 1;
+
+    }
+
+    .section-categorias-presentacion div p {
+        top: -300px;
+        display: none;
+        opacity: 0;
+    }
+
+    .section-categorias .section-categorias-presentacion div {
+        position: absolute;
+        display: block;
+        opacity: 1;
+    }
+
+    .section-categorias {
+
+        min-width: 100px;
+        min-height: 300px;
+    }
+
+    .section-categorias-presentacion img {
+        min-width: 0px;
+        min-height: 300px;
+        object-fit: cover;
+    }
+
+    .section-categorias.expanded h2 {
+
+        opacity: 1;
+        display: block;
+    }
+
+    .section-categorias.expanded p {
+        position: fixed;
+        opacity: 1;
+        top: 20%;
+        display: block;
+    }
+
+    .comentario {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .review-usuario {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .comentario {
+        font-size: clamp(8px, 2vw, 18px);
+        padding: 0.2rem;
+    }
+
+    .perfil img {
+        height: 20%;
+        border: 1px;
+        min-width: 30px;
+        width: 20%;
+    }
+
+    .perfil h3 {
+        font-size: 16px;
+    }
+
+    .perfil {
+        padding: 0;
+        width: 40%;
+    }
+
+    .perfil img {
+        margin: 0;
+    }
+
+    .review {
+        margin: 0.2rem;
+        width: 100%;
+    }
+
+    .comentario-responder {
+        font-size: clamp(8px, 2vw, 18px);
+    }
+}
+
+@keyframes mov {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(8deg);
+    }
+
+    50% {
+        transform: rotate(-8deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes movSect {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(2deg);
+    }
+
+    50% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes moverseDentroIzquierda {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moverseDentroDerecha {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moverseFueraIzquierda {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes moverseFueraDerecha {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes moverFondo {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes sombraAnimacion {
+    0% {
+        box-shadow: 0 0 10px rgb(87, 53, 119), 0 0 20px rgb(137, 61, 156), 0 0 30px rgb(175, 81, 199), 0 0 40px rgb(214, 68, 214), 0 0 50px rgb(160, 52, 160);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgba(138, 43, 226, 1), 0 0 20px rgba(186, 85, 211, 1), 0 0 30px rgb(167, 75, 190), 0 0 40px rgb(177, 14, 177), 0 0 50px rgba(255, 255, 255, 1);
+    }
+
+}
