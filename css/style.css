@@ -351,6 +351,8 @@ Acciones que realizan las tarjetas cuando interactuamos con ellas
 }
 
 .cerrar-card p {
+    padding: 1rem;
+    background-color: #3331318f;
     font-size: clamp(32px, 3vw, 54px);
 }
 
@@ -1118,7 +1120,7 @@ Media Queries
 
 @media (max-width: 768px) {
     footer{
-        font-size: 10px; /*hola bebeta*/
+        font-size: 10px; 
     }
     header img{
         min-width: 50px;
